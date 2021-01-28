@@ -1,0 +1,30 @@
+.card {border: 2px solid red;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 247px;
+    height: 175px;
+    margin: 20px;
+
+}
+
+.cardimage {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.body {
+    overflow-x: hidden;
+    display: block;
+}
+
+.horizontal {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.footer {
+    viewport-fit: screen;
+    height: 110px;
+    border: 2px solid red;
+}
