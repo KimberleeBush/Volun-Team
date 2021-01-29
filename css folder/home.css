@@ -24,7 +24,30 @@
 }
 
 .footer {
-    viewport-fit: screen;
+    viewport-fit: contain;
     height: 110px;
     border: 2px solid red;
+}
+
+.filter {
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: column;
+    background-color: orange;
+    width: 64px;
+}
+
+.header {
+    display: flex;
+    viewport-fit: contain;
+    height: 60px;
+    border: 2px solid red;
+}
+
+.create {
+    background-color: blue;
+}
+
+.toggle {
+    background-color: green;
 }
