@@ -2,9 +2,11 @@
     border-radius: 13px;
     display: flex;
     flex-direction: column;
-    width: 247px;
-    height: 175px;
-    margin: 20px;
+    width: 250px;
+    height: 132px;
+    margin-left: 12px;
+    margin-bottom: 48px;
+    margin-top: 24px;
 
 }
 
@@ -16,6 +18,7 @@
 .body {
     overflow-x: hidden;
     display: block;
+    background-color: #F9EEE4;
 }
 
 .horizontal {
@@ -30,11 +33,16 @@
 }
 
 .filter {
-    display: flex;
-    overflow-x: scroll;
-    flex-direction: column;
-    background-color: orange;
-    width: 64px;
+    background-color: white;
+    border-style: solid;
+    border-color: #F99645;
+    border-width: thin;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 74px;
+    margin-bottom: 24px;
 }
 
 .header {
@@ -46,8 +54,99 @@
 
 .create {
     background-color: blue;
+    border-radius: 20px;
+    width: 335px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 335px;
+    margin-bottom: 16px;
 }
 
 .toggle {
     background-color: green;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image {
+    padding-bottom: 48px;
+}
+
+.browse-all {
+    background-color: #F99645;
+    border-radius: 20px;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+   
+}
+
+.btn-group button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCA9E; 
+    border: 1px solid #F99645;
+    color: #F99645; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 167.5px;
+    margin-bottom: 16px;
+
+   
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+
+  .btn-group button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .btn-group button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .btn-group button:hover {
+    background-color: #F99645;
+  }
+
+  .btn-group button:focus {
+      background-color: #F99645;
+      border-style: solid;
+      border-color: #F99645;
+      color: white;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
