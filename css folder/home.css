@@ -55,7 +55,7 @@
 }
 
 .footer {
-    viewport-fit: contain;
+    width: 100%;
     height: 110px;
     background-color: #2D2D2D;
 }
@@ -71,6 +71,11 @@
     margin-right: auto;
     max-width: 74px;
     margin-bottom: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2D2D2D;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 .header {
@@ -90,13 +95,17 @@
     margin-right: auto;
     max-width: 335px;
     margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .create:hover {
     background-color: #2B468B;
 }
 
-.toggle {
+/* .toggle {
     background-color: green;
     display: flex;
     flex-direction: row;
@@ -104,7 +113,10 @@
     max-width: 335px;
     margin-left: auto;
     margin-right: auto;
-}
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+} */
 
 .center-screen {
     display: flex;
@@ -119,12 +131,22 @@
 }
 
 .browse-all {
-    background-color: #F99645;
+    background-color: #FFCA9E;
     border-radius: 20px;
     max-width: 160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px; 
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+    color: #F99645;
+}
+
+.browse-all:hover {
+    background-color: #F99645;
+    color: white;
 }
 
 .btn-group button {
@@ -138,7 +160,10 @@
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
     width: 167.5px;
-    margin-bottom: 16px;   
+    margin-bottom: 16px; 
+    padding-top: 12px;  
+    padding-bottom: 12px;
+    font-size: 16px;
   }
   
   /* Clear floats (clearfix hack) */
@@ -227,11 +252,12 @@
   }
 
   .footer-quote {
-      width: 300px;
+      width: 50%;
       color: white;
       padding-top: 26px;
       position: relative;
       top: 26px;
+      word-wrap: normal;
   }
 
   .footer-faq {
@@ -241,3 +267,14 @@
   .footer-help {
       color: white;
   }
+
+ /*  .down-carrot {
+      width: 8px;
+      height: 7px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -10px;
+      left: 20px;
+      margin-left: 2px;
+  } */
