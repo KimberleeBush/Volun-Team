@@ -1,19 +1,24 @@
 .flexContainer {
     display: flex;
     justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .filterFlex {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    /* justify-content: space-around; */
+    margin-top: 24px;
 }
 
 .eventHeroimage {
     display: block;
     margin-left:auto;
     margin-right: auto;
-    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 800px;
+    height: 600px;
 }
 
 .leftContent {
@@ -23,16 +28,224 @@
 .rightContent {
     display: flex;
     margin-right: 300px;
-    margin-top: 100px;
     flex-direction: column;
 }
 
 p {
-    margin-left: 300px;
+    margin-left: 0px;
     margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    max-width: 700px;
 }
 
 span {
     display: flex;
     justify-content: center;
+}
+
+body {
+    overflow-x: hidden;
+    display: block;
+    background-color: #F9EEE4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    viewport-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+.home-icon {
+    height: 24px;
+    width: 52px;
+}
+
+.search-container {
+    border:1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+  }
+
+.search-icon {
+    height: 28px;
+    width: 28px;
+    margin-left: -1px;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 28px;
+    border: white;
+    border-radius: 20px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+  }
+
+.filter {
+    background-color: #F99645;
+    border-radius: 20px;
+    width: 100px;
+    height: 24px;
+    margin-right: 50px;
+}
+
+.filterName {
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.profilePhoto {
+    margin-top: 200px;
+}
+
+.name {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #2B478B;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.buttonRSVP {
+    margin-right: 200px;
+    width: 180px;
+    height: 40px;
+    background-color: #F99645;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttonMessage {
+    width: 180px;
+    height: 40px;
+    background-color: #F99645;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.fade:not(.show) {
+    opacity: 1 !important;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #2D2D2D;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+a { 
+    text-decoration: none !important;
+}
+a:hover {
+    color: #F99645 !important;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 100px 2px;
+  background-color: #FFCA9E;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #EB7C2B;
+}
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
