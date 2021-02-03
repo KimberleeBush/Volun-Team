@@ -1,12 +1,14 @@
 .flexContainer {
     display: flex;
     justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .filterFlex {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    /* justify-content: space-around; */
+    margin-top: 24px;
 }
 
 .eventHeroimage {
@@ -32,6 +34,9 @@
 p {
     margin-left: 0px;
     margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    max-width: 700px;
 }
 
 span {
@@ -40,7 +45,74 @@ span {
 }
 
 body {
+    overflow-x: hidden;
+    display: block;
     background-color: #F9EEE4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    viewport-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+.home-icon {
+    height: 24px;
+    width: 52px;
+}
+
+.search-container {
+    border:1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+  }
+
+.search-icon {
+    height: 28px;
+    width: 28px;
+    margin-left: -1px;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 28px;
+    border: white;
+    border-radius: 20px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+  }
+
+.filter {
+    background-color: #F99645;
+    border-radius: 20px;
+    width: 100px;
+    height: 24px;
+    margin-right: 50px;
+}
+
+.filterName {
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+
 }
 
 .profilePhoto {
@@ -51,10 +123,49 @@ body {
     margin-bottom: 100px;
     margin-top: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 h3 {
     font-size: 20px;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #2B478B;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.buttonRSVP {
+    margin-right: 200px;
+    width: 180px;
+    height: 40px;
+    background-color: #F99645;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttonMessage {
+    width: 180px;
+    height: 40px;
+    background-color: #F99645;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+
 }
 
 * {box-sizing:border-box}
@@ -105,13 +216,7 @@ a {
 a:hover {
     color: #F99645 !important;
 }
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #F99645);
-}
 
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
