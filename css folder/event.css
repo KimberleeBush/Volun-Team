@@ -173,6 +173,16 @@ h1 {
 
 }
 
+#buttonRSVP:hover {
+    background-color: #FFAB66;
+    color: white;
+}
+
+#buttonMessage:hover {
+    background-color: #FFAB66;
+    color: white;
+}
+
 .center-screen {
     display: flex;
     flex-direction: column;
@@ -489,4 +499,9 @@ a:hover {
     font-family: "Open Sans";
     font-weight: bold;
     font-size: 20px;
+}
+
+.ModalbuttonMessage:hover {
+    background-color: #FFAB66;
+    color: white;
 }
