@@ -26,3 +26,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+function hamburger() {
+  var element = document.getElementById("hamburger");
+   element.classList.toggle("hamburger-popup");
+}

@@ -278,3 +278,37 @@
       left: 20px;
       margin-left: 2px;
   } */
+
+  .hamburger-popup { 
+      width: 148px;
+      height: 160px;
+      background-color: white;
+      color: #2B478B;
+      border-radius: 20px;
+      font-size: 14px;
+     display: flex;
+     flex-direction: column;
+     float: right;
+     margin-right: 40px;
+  }
+
+  .profile-image {
+      margin-top: 20px;
+      margin-left: 22px;
+      width: 24px;
+      height: 24px;
+  }
+
+  .profile-text {
+      margin-left: 17px;
+      position: relative;
+      top: -20px;
+      left: 40px;
+  }
+
+  .messages-image {
+      width: 24px;
+      margin-left: 22px;
+      position: relative;
+    
+  }
