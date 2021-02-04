@@ -31,7 +31,7 @@
     flex-direction: column;
 }
 
-p {
+.bodyContent {
     margin-left: 0px;
     margin-top: 50px;
     font-family: "Open Sans", sans-serif;
@@ -39,10 +39,10 @@ p {
     max-width: 700px;
 }
 
-span {
+/* span {
     display: flex;
     justify-content: center;
-}
+} */
 
 body {
     overflow-x: hidden;
@@ -73,6 +73,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   }
 
@@ -80,7 +81,7 @@ body {
     height: 28px;
     width: 28px;
     margin-left: -1px;
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -112,6 +113,8 @@ input[type=text] {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -120,10 +123,12 @@ input[type=text] {
 }
 
 .name {
-    margin-bottom: 100px;
+    margin-bottom: 35px;
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -142,7 +147,7 @@ h1 {
     margin-bottom: 100px;
 }
 
-.buttonRSVP {
+#buttonRSVP {
     margin-right: 200px;
     width: 180px;
     height: 40px;
@@ -155,7 +160,7 @@ h1 {
     font-size: 20px;
 }
 
-.buttonMessage {
+#buttonMessage {
     width: 180px;
     height: 40px;
     background-color: #F99645;
@@ -168,15 +173,91 @@ h1 {
 
 }
 
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.horizontal {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.horizontalCards {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 30px;
+}
+
+.card {
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 180px;
+    margin-left: 12px;
+    margin-bottom: 48px;
+    margin-top: 24px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+}
+
+.cardimage {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.card-headline {
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: "Open Sans";
+}
+
+.card-date {
+    position: relative;
+    top: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.card-location-image {
+    position: relative;
+    left: 175px;
+    top: -35px;
+}
+
+.card-location-text {
+    position: relative;
+    left: 190px;
+    top: -50px;
+    font-size: 12px;
+}
+
+.map {
+    border-radius: 13px;
+}
+
+.wheelbarrow {
+    border-radius: 13px;
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  max-height: 615.56px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 13px;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
@@ -221,7 +302,7 @@ a:hover {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px 100px 2px;
+  margin: 0 2px 24px 2px;
   background-color: #FFCA9E;
   border-radius: 50%;
   display: inline-block;
@@ -248,4 +329,164 @@ a:hover {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.yourRSVP {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #2B478B;
+}
+
+.browse-all {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #2B478B;
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.eventDate {
+    font-size: 28px;
+}
+
+.category {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-left: 10px;
+    padding: 20px;
+    /* justify-content: center; */
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.cat-headline {
+    /* display: flex; */
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #2B478B;
+    font-size: 20px;
+    /* justify-content: center;  */
+    display: block;
+}
+
+.yourNeighborhood {
+    margin-top: 38px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #2B478B;
+    font-size: 20px;
+    display: block;
+}
+
+.footer {
+    position: absolute;
+    bottom: -1250px;
+    width: 100%;
+    height: 110px;  
+    background-color: #2D2D2D;
+}
+
+.footer-quote {
+    width: 300px;
+    color: white;
+    padding-top: 50px;
+    position: relative; 
+    top: 50px; 
+    padding-left: 25px;
+}
+
+.footer-faq {
+    color: white;
+    padding: 30px;
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+}
+
+.footer-help {
+    color: white;
+    padding: 30px;
+    position: relative; 
+    float: right;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+    top: 25%;
+    background-color: #fefefe;
+    margin: auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* Could be more or less, depending on screen size */
+    color: #2B478B;
+
+  }
+
+.pTitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+.pContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    font-family: "Open Sans";
+    font-size: 18px;
+    color:#2D2D2D;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.ModalbuttonMessage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 40px;
+    background-color: #F99645;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
 }
