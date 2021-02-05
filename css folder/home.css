@@ -330,10 +330,21 @@
 
   .profile-text {
       margin-left: 17px;
+      text-decoration: none;
       position: relative;
       top: -20px;
       left: 40px;
+      
   }
+
+  .profile-text:hover {
+        text-decoration: underline;
+  }
+
+    .profile-text:visited {
+    text-decoration: none !important;
+}
+
 
   .messages-image {
       width: 24px;
@@ -358,8 +369,12 @@
 
   .event-page {
     position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
+    border-radius: 13px;
+    width: 250px;
+    height: 180px;
+    margin-left: 12px;
+    margin-bottom: 48px;
+    margin-top: 24px;
     }
 
     .empty-header {
@@ -387,4 +402,5 @@
         .empty-paragraph:hover {
             text-decoration: underline;
         }
+
   
