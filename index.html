@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css folder\home.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -23,11 +22,11 @@
         </form>
       </div>
       <div>
-        <img src="Images/hamburger_mobile.png" height="18" onclick="hamburger()" >
+        <img id="hamburger-button" src="Images/hamburger_mobile.png" height="18">
       </div>
     </div>
 
-    <div id="hamburger" class="hamburger-popup">
+    <div id="hamburger" class="hamburger-popup hamburger-hide">
       <img class="profile-image" src="Images/hamburger-profile.png">
       <span class="profile-text">Profile</span>
       <img class="messages-image" src="Images/hamburger-messages.png">
@@ -35,6 +34,7 @@
       <img class="messages-image" src="Images/hamburger-settings.png">
       <span class="profile-text">Settings</span>
     </div>
+
 
     <div class="center-screen hero-image">
       <img src="Images/hero_mobile.png" height="154">
@@ -45,10 +45,6 @@
       <button>Offer Help</button>
     </div>
 
-    <!-- <div class="toggle">
-      <span>Need Help</span> <span>Offer Help</span> 
-    </div> -->
-
     <div class="create center-screen">
       <div>Create a Post</div> 
     </div>
@@ -56,7 +52,6 @@
     </div>
     <div class="filter center-screen">
       <div>Filters</div>
-      <!-- <img class="down-carrot" src="Images/down-carrot.png"> -->
     </div>
       
       <div class="center-screen">
@@ -64,22 +59,22 @@
       </div>
       <div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/frontyard.png" width="250" height="132"> <span class="card-headline" >Front Yard Cleanup</span> <span class="card-date">Saturday, February 20</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/parkclean.png" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/leafblowing.png" width="250" height="132"> <span class="card-headline" >Leaf Blowing</span> <span class="card-date">Weekly</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/dogwalking.png" width="250" height="132"> <span class="card-headline" >Dog Walking</span> <span class="card-date">Bi-Weekly</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/groceryshopping.png" width="250" height="132"> <span class="card-headline" >Grocery Shopping</span> <span class="card-date">Friday, February 19</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Laurelhurst</span>
       </div class="horizontal">
     </div>
   
@@ -89,13 +84,13 @@
     </div>
     <div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/esltutor.png" width="250" height="132"> <span class="card-headline" >ESL Tutoring</span> <span class="card-date">Bi-Weekly</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Lents</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/testprep.png" width="250" height="132"> <span class="card-headline" >Test Prep Help</span> <span class="card-date">Monday, February 22</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Creston</span>
       </div class="horizontal">
       <div class="card">
-        <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+        <img class="cardimage" src="Images/computerhelp.png" width="250" height="132"> <span class="card-headline" >Computer Help</span> <span class="card-date">Thursday, February 25</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Parkrose</span>
       </div class="horizontal">
       <div class="card">
         <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
@@ -113,13 +108,13 @@
   </div>
   <div class="horizontal">
     <div class="card">
-      <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+      <img class="cardimage" src="Images/donationdrive.png" width="250" height="132"> <span class="card-headline" >Donation Drive</span> <span class="card-date">Wednesday, February 24</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Piedmont</span>
     </div class="horizontal">
     <div class="card">
-      <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+      <img class="cardimage" src="Images/doggymeetup.png" width="250" height="132"> <span class="card-headline" >Doggy Meet Up</span> <span class="card-date">Friday, February 26</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Uptown</span>
     </div class="horizontal">
     <div class="card">
-      <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
+      <img class="cardimage" src="Images/beachclean.png" width="250" height="132"> <span class="card-headline" >Beach Cleanup</span> <span class="card-date">Ongoing</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Sauvie Island</span>
     </div class="horizontal">
     <div class="card">
       <img class="cardimage" src="Images/andre-ouellet-FzECg2eNhj4-unsplash.jpg" width="250" height="132"> <span class="card-headline" >Park Cleanup</span> <span class="card-date">Thursday, February 18</span> <img class="card-location-image" src="Images/maps-and-flags 1.png" height="15" width="14"> <span class="card-location-text" >Mt Tabor</span>
@@ -141,6 +136,9 @@
       <divclass="footer-faq">FAQ</div>
 </div>
     
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 <script src="index.js"></script>
+
 </body>
 </html>

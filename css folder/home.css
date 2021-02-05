@@ -31,13 +31,13 @@
 
 .card-location-image {
     position: relative;
-    left: 175px;
+    left: 165px;
     top: -35px;
 }
 
 .card-location-text {
     position: relative;
-    left: 190px;
+    left: 180px;
     top: -50px;
     font-size: 12px;
 }
@@ -83,6 +83,7 @@
     viewport-fit: contain;
     margin-left: 20px;
     margin-right: 20px; 
+    
 }
 
 .create {
@@ -104,19 +105,6 @@
 .create:hover {
     background-color: #2B468B;
 }
-
-/* .toggle {
-    background-color: green;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-} */
 
 .center-screen {
     display: flex;
@@ -268,17 +256,6 @@
       color: white;
   }
 
- /*  .down-carrot {
-      width: 8px;
-      height: 7px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: -10px;
-      left: 20px;
-      margin-left: 2px;
-  } */
-
   .hamburger-popup { 
       width: 148px;
       height: 160px;
@@ -288,8 +265,15 @@
       font-size: 14px;
      display: flex;
      flex-direction: column;
-     float: right;
      margin-right: 40px;
+     position: absolute;
+     right: 20px;
+     
+     
+  }
+
+  .hamburger-hide {
+      display: none;
   }
 
   .profile-image {
@@ -311,4 +295,18 @@
       margin-left: 22px;
       position: relative;
     
+  }
+
+  .overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
   }

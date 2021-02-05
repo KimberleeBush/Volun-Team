@@ -1,3 +1,11 @@
+$(document).ready(function(){
+  
+var hamburger=document.getElementById("hamburger-button")
+$(hamburger).click(function(){
+  $("#hamburger").toggleClass("hamburger-hide")
+})
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,11 +35,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function hamburger() {
-  var element = document.getElementById("hamburger");
-   element.classList.toggle("hamburger-popup");
-var modal = document.getElementById("myModal");
-
 // Get the button that opens the modal
 var btn = document.getElementById("buttonRSVP");
 
@@ -54,3 +57,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/* function hamburger() {
+  var element = document.getElementById("hamburger");
+  /*  element.classList.toggle("hamburger-popup"); */
+//   var classes= element.classList
+//   var result= classes.toggle("hamburger-hide")
+//   if(result) {
+//     element.
+//   }
+// } */
+
+/* $(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+}); */
+
+})
