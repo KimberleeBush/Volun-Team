@@ -390,15 +390,15 @@ a:hover {
     display: block;
 }
 
-.footer {
+/* .footer {
     position: absolute;
     bottom: -1250px;
     width: 100%;
     height: 110px;  
     background-color: #2D2D2D;
-}
+} */
 
-.footer-quote {
+/* .footer-quote {
     width: 300px;
     color: white;
     padding-top: 50px;
@@ -425,6 +425,56 @@ a:hover {
     display: flex;
     flex-direction: column;
     top: 20px;
+} */
+
+.footer {
+    width: 100%;
+    height: 110px;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -1250px;
+}
+
+.footer-quote {
+    width: 50%;
+    color: white;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    word-wrap: normal;
+    font-size: 12px;
+}
+
+.footer-faq {
+    color: white;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-right: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+
+.footer-faq:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-help {
+    color: white;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: -15px;
+    text-decoration: none;
+    
+}
+
+.footer-help:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .modal {
