@@ -1,3 +1,278 @@
+.body {
+    overflow-x: hidden;
+    display: block;
+    background-color: #F9EEE4;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.horizontal {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    viewport-fit: contain;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.search-container {
+    border:1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    
+  }
+
+  @media screen and (min-width: 800px) {
+      .search-container {
+      width: 570px;
+      }
+  }
+
+.search-icon {
+    height: 28px;
+    width: 28px;
+    margin-left: -1px;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 28px;
+    border: white;
+    border-radius: 20px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+  }
+  
+  input[type=text]:focus {
+    background-color: blue;
+  }
+
+.home-icon {
+    height: 30px;
+    width: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .home-icon {
+    height: 40px;
+    width: auto;
+    }
+}
+
+.home-icon:hover {
+  cursor: pointer;
+}
+
+.hamburger-popup { 
+    width: 148px;
+    height: 160px;
+    background-color: white;
+    color: #2B478B;
+    border-radius: 20px;
+    font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   margin-right: 40px;
+   position: absolute;
+   right: 20px;
+   cursor: pointer; 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hamburger-image:hover {
+  cursor: pointer;
+}
+
+.hamburger-hide {
+    display: none;
+}
+
+.profile-image {
+    margin-top: 20px;
+    margin-left: 22px;
+    width: 24px;
+    height: 24px;
+}
+
+.profile-text {
+    margin-left: 17px;
+    text-decoration: none;
+    position: relative;
+    top: -20px;
+    left: 40px;
+    
+}
+
+.profile-text:hover {
+      text-decoration: underline;
+}
+
+  .profile-text:visited {
+  text-decoration: none !important;
+}
+
+.messages-image {
+    width: 24px;
+    margin-left: 22px;
+    position: relative;
+  
+}
+
+.create {
+    background-color: #7499F1;
+    color: white;
+    border-radius: 20px;
+    width: 335px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.create:hover {
+    background-color: #2B468B;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .create {
+    width: 422px;
+    }
+}
+
+.filter {
+    background-color: white;
+    border-style: solid;
+    border-color: #F99645;
+    border-width: thin;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 74px;
+    margin-bottom: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2D2D2D;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.filter:hover {
+    background-color: #F99645;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .filter {
+    width: 127px;
+    }
+}
+
+.hero-image {
+    padding-bottom: 48px;
+    height: 154px; 
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .hero-image {
+    height: 300px;
+    }
+}
+
+.neighborhood-image {
+    height: 74px;
+    width: 160px;
+}
+
+@media screen and (min-width: 800px) {
+    .neighborhood-image {
+    height: 212px;
+    width: 460px;
+    }
+}
+
+.teaching-image {
+    height: 112px;
+    width: 160px;
+   
+}
+
+@media screen and (min-width: 800px) {
+    .teaching-image {
+    height: 320px;
+    width: 460px;
+    }
+}
+
+.social-illustration {
+    height: 116px;
+    width: 160px;
+   
+}
+
+@media screen and (min-width: 800px) {
+    .social-illustration {
+    height: 336px;
+    width: 460px;
+    }
+}
+
+.category-text {
+    font-size: 20px;
+    font-style: bold;
+    color: #2B468B;
+}
+
+@media screen and (min-width: 800px) {
+    .category-text {
+    font-size: 40px;
+    }
+}
+
+
+
 .card {
     border-radius: 13px;
     display: flex;
@@ -19,9 +294,25 @@
     transform: scale(1.1, 1.1);
 }
 
+@media screen and (min-width: 800px) {
+    .card {
+    width: 345px;
+    height: 250px;
+    }
+}
+
 .cardimage {
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
+    width: 250px;
+    height: 132px;
+}
+
+@media screen and (min-width: 800px) {
+    .cardimage {
+    width: 345px;
+    height: 190px;
+    }
 }
 
 .card-headline {
@@ -49,95 +340,10 @@
     font-size: 12px;
 }
 
-.body {
-    overflow-x: hidden;
-    display: block;
-    background-color: #F9EEE4;
-    font-family: "Open Sans", sans-serif;
-}
-
-.horizontal {
-    display: flex;
-    overflow-x: scroll;
-}
-
-.footer {
-    width: 100%;
-    height: 110px;
-    background-color: #2D2D2D;
-    display: flex;
-    flex-direction: column;
-}
-
-.filter {
-    background-color: white;
-    border-style: solid;
-    border-color: #F99645;
-    border-width: thin;
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 74px;
-    margin-bottom: 24px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #2D2D2D;
-    padding-bottom: 8px;
-    padding-top: 8px;
-}
-
-.filter:hover {
-    background-color: #F99645;
-    color: white;
-    cursor: pointer;
-}
-
-.header {
-    display: flex;
-    viewport-fit: contain;
-    margin-left: 20px;
-    margin-right: 20px; 
-    
-}
-
-.create {
-    background-color: #7499F1;
-    color: white;
-    border-radius: 20px;
-    width: 335px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 335px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.create:hover {
-    background-color: #2B468B;
-    cursor: pointer;
-}
-
-.center-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-image {
-    padding-bottom: 48px;
-}
-
 .browse-all {
     background-color: #FFCA9E;
     border-radius: 20px;
-    max-width: 160px;
+    width: 160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px; 
@@ -154,6 +360,12 @@
     cursor: pointer;
 }
 
+@media screen and (min-width: 800px) {
+    .browse-all {
+    width: 212px;
+    }
+}
+
 .btn-group button {
     display: flex;
     flex-direction: row;
@@ -164,11 +376,11 @@
     color: #F99645; /* White text */
     cursor: pointer; /* Pointer/hand icon */
     float: left; /* Float the buttons side by side */
-    width: 167.5px;
     margin-bottom: 16px; 
     padding-top: 12px;  
     padding-bottom: 12px;
     font-size: 16px;
+    text-align: center;
   }
   
   /* Clear floats (clearfix hack) */
@@ -180,16 +392,18 @@
   
   .btn-group button:not(:last-child) {
     border-right: none; /* Prevent double borders */
-  }
+    }
 
   .btn-group button:last-child {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    width: 167.5px;
   }
 
   .btn-group button:first-child {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    width: 167.5px;  
   }
   
   .btn-group button:hover {
@@ -204,61 +418,34 @@
       color: white;
   }
 
+  @media screen and (min-width: 800px) {
+    .btn-group button:first-child {
+    width: 211px;
+    }
+
+    @media screen and (min-width: 800px) {
+        .btn-group button:last-child {
+        width: 211px;
+        }  
+
   .center {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-  
-  input[type=text] {
-    width: 200px;
-    height: 28px;
-    border: white;
-    border-radius: 20px;
-    background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    
-  }
-  
-  input[type=text]:focus {
-    background-color: blue;
-  }
-
-  .search-icon {
-      height: 28px;
-      width: 28px;
-      margin-left: -1px;
-      z-index: 2;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-  }
-
-  .home-icon {
-      height: 24px;
-      width: 52px;
-  }
-
-  .home-icon:hover {
-    cursor: pointer;
-  }
-
-  .search-container {
-    border:1px solid white;
-    background-color: white;
-    border-radius: 20px;
-    width: 200px;
-    height: 28px;
-    margin-left: auto;
     margin-right: auto;
-    position: relative;
-    
-  }
+    margin-left: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 110px;
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+}
+
 
   .footer-quote {
       width: 50%;
@@ -297,61 +484,6 @@
     text-decoration: underline;
     cursor: pointer;
 }
-
-  .hamburger-popup { 
-      width: 148px;
-      height: 160px;
-      background-color: white;
-      color: #2B478B;
-      border-radius: 20px;
-      font-size: 14px;
-     display: flex;
-     flex-direction: column;
-     margin-right: 40px;
-     position: absolute;
-     right: 20px;
-     cursor: pointer; 
-  }
-
-  .hamburger-image:hover {
-    cursor: pointer;
-  }
-
-  .hamburger-hide {
-      display: none;
-  }
-
-  .profile-image {
-      margin-top: 20px;
-      margin-left: 22px;
-      width: 24px;
-      height: 24px;
-  }
-
-  .profile-text {
-      margin-left: 17px;
-      text-decoration: none;
-      position: relative;
-      top: -20px;
-      left: 40px;
-      
-  }
-
-  .profile-text:hover {
-        text-decoration: underline;
-  }
-
-    .profile-text:visited {
-    text-decoration: none !important;
-}
-
-
-  .messages-image {
-      width: 24px;
-      margin-left: 22px;
-      position: relative;
-    
-  }
 
   .overlay {
     position: fixed;
