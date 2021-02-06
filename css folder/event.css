@@ -247,6 +247,13 @@ h1 {
     font-size: 12px;
 }
 
+.card:hover {
+    cursor: pointer;
+    /* border-style: solid;
+    border-color: #F99645; */
+    transform: scale(1.1, 1.1);
+}
+
 .map {
     border-radius: 13px;
 }
@@ -554,4 +561,8 @@ a:hover {
 .ModalbuttonMessage:hover {
     background-color: #FFAB66;
     color: white;
+}
+
+.category:hover {
+    cursor: pointer;
 }
